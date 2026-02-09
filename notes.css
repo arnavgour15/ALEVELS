@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  svg {
+    overflow: visible;
+  }
+  html, body {
+    height: 100%; /* Ensure the html and body take full height */
+    margin: 0; /* Remove default margin */
+}
+  body {
+      background-image: url('imags/wp12566973-purple-and-blue-4k-wallpapers.jpg');
+      background-size: cover; /* Adjusts image to cover the entire screen */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: #fff;
+  }
+  
+  .container {
+    padding: 3rem 1rem;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    height: 10vh;
+    z-index: 9999;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s linear;
+  }
+  
+  header nav a::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s linear;
+  }
+  
+  header nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s linear;
+  }
+  
+  
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.content {
+    text-align: center;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom :10px
+}
+
+/* Subject Buttons */
+
+
+.subject-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subject-buttons button {
+    padding: 15px 35px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subject-buttons button:hover {
+    background-color: #4a90e2;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.unit-options {
+  display: flex;
+  gap: 200000px; /* Space between buttons */
+}
+
+.unit-button {
+  padding: 15px 30px; /* Padding for the buttons */
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 1.2em; /* Font size */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.unit-button:hover {
+  background-color: #4a90e2; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+}
+
+footer {
+    color: #ffffff; /* Footer text color */
+    text-align: center;
+    padding: 230px;
+    position: relative;
+    bottom: 10;
+    width: 100%;
+}
+
+.social-media-container {
+    margin-top: 10px;
+}
+
+.social-media {
+    display: inline-block;
+    margin: 0 10px;
+}
+.physics-header {
+  margin-top: 50px; /* Adjust as needed */
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
+.math-header {
+  margin-top: 50px;
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
+
+
+.biology-header {
+  margin-top: 50px; /* Adjust as needed */
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
+.chemistry-header {
+  margin-top: 50px; /* Adjust as needed */
+  text-align: center;
+  border-bottom: 2px solid #fffafa; /* Creates an underline */
+  display: inline-block; /* Ensures the underline is only as wide as the text */
+  padding-bottom: 5px; /* Adjusts space between the text and the underline */
+}
